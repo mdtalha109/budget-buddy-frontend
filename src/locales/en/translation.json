@@ -15,7 +15,18 @@
     "enter_your_credentials_to_access_your_account": "Enter your credentials to access your account",
     "create_an_accout": "Create an Account",
     "enter_your_details_to_get_started": "Enter your details to get started"
-
+  },
+  "dashboard": {
+    "welcome": "Welcome, {{name}}!",
+    "overview": "Here's an overview of your activities.",
+    "total_expenses": "Total Expense",
+    "total_expenses_description": "Total Expense of current month",
+    "no_of_expense": "Number of expense",
+    "no_of_time_expense": "Number of time you have spent",
+    "total_incomes": "Total Incomes",
+    "total_incomes_description": "Total Income of current month",
+    "savings": "Savings",
+    "total_savings_description": "Total Income of current month"
   }
-  
 }
+  
