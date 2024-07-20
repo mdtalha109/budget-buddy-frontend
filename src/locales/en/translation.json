@@ -1,4 +1,10 @@
 {
+  "common": {
+    "description": "Description",
+    "amount": "Amount",
+    "category": "Category",
+    "add_new": "Add New"
+  },
   "auth": {
     "login": "Login",
     "register": "Register",
@@ -23,10 +29,21 @@
     "total_expenses_description": "Total Expense of current month",
     "no_of_expense": "Number of expense",
     "no_of_time_expense": "Number of time you have spent",
-    "total_incomes": "Total Incomes",
+    "total_income": "Total Income",
     "total_incomes_description": "Total Income of current month",
+    "no_of_income": "Number of income",
+    "no_of_time_income": "Number of time you have earn",
     "savings": "Savings",
     "total_savings_description": "Total Income of current month"
+  },
+  "expense": {
+    "title": "Expense",
+    "add_expense": "Add Expense"
+  },
+  "income": {
+    "title": "Income",
+    "add_income": "Add Income"
   }
+
 }
   
