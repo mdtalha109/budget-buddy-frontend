@@ -1,4 +1,10 @@
 {
+  "app": {
+    "title": "Budget Buddy",
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
   "common": {
     "description": "Description",
     "amount": "Amount",
