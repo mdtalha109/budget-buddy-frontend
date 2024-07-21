@@ -4,13 +4,12 @@ import { GET_EXPENSES } from '../graphql/expense/query';
 import client from '../apolloClient';
 
 export interface Expense {
-    id: number;
+    id: string;
     userId: number;
     description: string;
     amount: number;
     date: string;
     category: string;
-    notes?: string;
     createdAt: string;
     updatedAt: string;
 }
