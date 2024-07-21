@@ -6,10 +6,11 @@ import IncomeList from '../../components/incomes/IncomeList'
 import { useFetchIncomes } from '../../hooks/useFetchIncomes'
 import IncomeForm from '../../components/incomes/IncomeForm'
 import { useTranslation } from 'react-i18next'
+import { Card } from '../../components/ui/Card'
 
 const Incomes = () => {
     const [showForm, setShowForm] = useState(false)
-    const {fetchIncomesData} = useFetchIncomes()
+    const { fetchIncomesData } = useFetchIncomes()
 
     const { t } = useTranslation();
 
@@ -29,14 +30,17 @@ const Incomes = () => {
                         <Button onClick={() => setShowForm(true)}>{t("common.add_new")}</Button>
                     </div>
                 </div>
-                <IncomeOverview/>
+                <IncomeOverview />
                 <Modal isOpen={showForm} onClose={() => setShowForm(false)} >
                     <Modal.Header>{t("income.add_income")}</Modal.Header>
                     <Modal.Body>
                         <IncomeForm operationSuccess={operationSuccess} />
                     </Modal.Body>
                 </Modal>
-                <IncomeList />
+                <Card>
+                    <IncomeList />
+                </Card>
+
             </div>
         </>
     )

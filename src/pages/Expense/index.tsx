@@ -7,6 +7,7 @@ import ExpenseList from '../../components/expense/ExpenseList'
 import { useFetchExpenses } from '../../hooks/useFetchExpenses'
 import ExpenseOverview from '../../components/expense/ExpenseOverview'
 import { useTranslation } from 'react-i18next'
+import { Card } from '../../components/ui/Card'
 
 const Expense = () => {
     const [showForm, setShowForm] = useState(false)
@@ -37,8 +38,10 @@ const Expense = () => {
                     </Modal.Body>
                 </Modal>
 
-
-                <ExpenseList />
+                <Card>
+                    <ExpenseList />
+                </Card>
+               
 
             </div>
         </>
