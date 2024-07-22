@@ -4,10 +4,14 @@ import { NavLink } from 'react-router-dom';
 
 import { FaTachometerAlt, FaWallet, FaPiggyBank, FaUserCircle, FaSignOutAlt, FaBars, FaTimes } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
+import { useDispatch } from 'react-redux';
+import { clearToken } from '../../../redux/authSlice';
 
 const Sidebar: React.FC = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(true);
+
+  const dispatch = useDispatch()
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
@@ -83,7 +87,7 @@ const Sidebar: React.FC = () => {
       <div className="">
         <button
           onClick={() => {
-            // Handle logout logic here
+            dispatch(clearToken())
           }}
           className="flex items-center w-full px-4 py-2 rounded-lg bg-red-600 hover:bg-red-700 transition duration-300"
         >
