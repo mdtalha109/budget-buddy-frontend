@@ -9,7 +9,10 @@
     "description": "Description",
     "amount": "Amount",
     "category": "Category",
-    "add_new": "Add New"
+    "add_new": "Add New",
+    "save": "Save",
+    "cancel": "Cancel",
+    "submit": "submit"
   },
   "auth": {
     "login": "Login",
@@ -49,6 +52,26 @@
   "income": {
     "title": "Income",
     "add_income": "Add Income"
+  },
+  "profile": {
+    "title": "Profile",
+    "update_your_personal_information": "Update your personal information." ,
+    "username": "Username",
+    "email": "Email",
+    "security": {
+      "title": "Security",
+      "description": "Update your password and delete your account.",
+      "current_password": "Current Password",
+      "new_password": "New Password",
+      "confirm_password": "Confirm Password",
+      "update_password": "Update Password",
+      "passwords_do_not_match": "Current password and new password doesn't matched",
+      "password_updated_successfully": "Password updated successfully",
+      "current_password_required": "Please enter current password",
+      "new_password_required": "Please enter new password",
+      "confirm_password_required": "Please enter new password again"
+
+    }
   }
 
 }

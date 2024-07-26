@@ -4,6 +4,7 @@ import { RootState } from '../redux/store';
 interface AuthState {
   isAuthenticated: boolean;
   user: {
+    id: string | null
     name: string | null;
     email: string | null;
   };
